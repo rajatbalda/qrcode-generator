@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Generate custom QR codes instantly for links, text, or messages." />
+  <meta name="keywords" content="QR Code Generator, JavaScript QR Tool, Create QR Codes, Online QR Generator" />
+  <meta name="author" content="Rajat Balda" />
+  <title>QR Code Generator - Create & Download QR Codes</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <h1>📱 QR Code Generator</h1>
+    <p>Enter any text or URL to generate a downloadable QR Code instantly.</p>
+  </header>
+
+  <main>
+    <input type="text" id="qr-input" placeholder="Enter URL or Text" aria-label="Text to encode" />
+    <button onclick="generateQR()">Generate QR</button>
+    <div id="qr-code"></div>
+    <a id="download-link" style="display:none;" download="qr-code.png">Download QR Code</a>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 QR Generator by Rajat Balda</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.1/build/qrcode.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
